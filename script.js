@@ -1,14 +1,14 @@
 const messages = [
-    "Are you sure?",
-    "Really sure??",
-    "Are you positive?",
-    "Pookie please...",
-    "Just think about it!",
-    "If you say no, I will be really sad...",
-    "I will be very sad...",
-    "I will be very very very sad...",
-    "Ok fine, I will stop asking...",
-    "Just kidding, say yes please! ❤️"
+    "Неге птишка?",
+    "Э? көтбок!!",
+    "Бытшытынды шығарам",
+    "Пожалуйста принцесса ия деші",
+    "Плиз плиз овалым менің",
+    "Сенің көтің боқ",
+    "Все давай, это последняя кнопка",
+    "Ха, көтбоқ, сеніп калдыңго ия?",
+    "Көтеніңе саусақ тығамыыыыннн",
+    "Жанымсол, ай лув ю ❤️"
 ];
 
 let messageIndex = 0;
@@ -20,6 +20,7 @@ function handleNoClick() {
     messageIndex = (messageIndex + 1) % messages.length;
     const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
     yesButton.style.fontSize = `${currentSize * 1.5}px`;
+    yesButton.textContent = "Ия";
 }
 
 function handleYesClick() {
